@@ -1,6 +1,6 @@
-import workShops from "./Classes/workShops"
-import { workShopService } from "../Services/workShopService";
-import { SmsLogger, FileLogger, EmailLogger, BaseLogger } from "./Loggers";
+import workShops from "./Classes/workShops.js"
+import { workShopService } from "./Services/workShopService.js";
+import { SmsLogger, FileLogger, EmailLogger, BaseLogger } from "./Loggers.js";
 
 
 

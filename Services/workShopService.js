@@ -1,4 +1,4 @@
-import workShops from "../Classes/workShops";
+
 
 console.log("--------------------------------------------");
 
