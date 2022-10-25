@@ -1,4 +1,4 @@
-import workShops from "./workShops";
+import workShops from "../Classes/workShops";
 
 console.log("--------------------------------------------");
 
@@ -17,6 +17,6 @@ export class workShopService {
 
   add(workShop) {
     this.workShops.push(workShop);
-    this.logger.log("Yeni bir ev eklendi.", workShop); //x , this.loggerType
+    this.logger.log("Yeni bir kamp eklendi.", workShop); //x , this.loggerType
   }
 }

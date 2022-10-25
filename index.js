@@ -1,5 +1,5 @@
-import workShops from "./workShops";
-import { workShopService } from "./workShopService";
+import workShops from "./Classes/workShops";
+import { workShopService } from "./Services/workShopService";
 import { SmsLogger, FileLogger, EmailLogger, BaseLogger } from "./Loggers";
 
 
