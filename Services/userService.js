@@ -15,14 +15,9 @@ export class userService {
   
     add(newUser) {
 
-      this.users.forEach(user => {
-        if(user.userEmail = newUser.userEmail){
-          this.logger.log("It seems this email already exist")
-        }else{
           this.users.push(newUser);
           this.logger.log("A new user added.", newUser); //x , this.loggerType
-        }
-      });
+     
     }
 
     delete(oldUser){

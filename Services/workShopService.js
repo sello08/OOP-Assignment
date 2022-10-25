@@ -11,21 +11,30 @@ export class workShopService {
 
   list(filterCb) {
     
-    console.log(filterCb !== undefined ? this.workShops.filter(filterCb) : this.workShops); // ternary operator
+    console.log(filterCb !== undefined ? this.workShops.filter(filterCb) : this.workShops); 
  
   }
 
   add(newWorkShop) {
-
-    
+       
+    if(!this.workShops.length){
         this.workShops.push(newWorkShop);
-        this.logger.log("A new WorkShop added.", newWorkShop); //x , this.loggerType
-    
+        this.logger.log("A new WorkShop added.", newWorkShop);
+    }else{
+      this.workShops.forEach(element => {
+        if(element.workShopId == newWorkShop.workShopId){
+          this.logger.log("It seems this topic ID already in use...")
+        }else{
+          this.workShops.push(newWorkShop);
+          this.logger.log("A new WorkShop added.", newWorkShop);
+        }
+      });
+    }
   }
 
   deleteById(id){
     this.workShops =  this.workShops.filter((workShop) => { workShop.workShopId !== id })
 
-    this.logger.log(`${topic} named workshop deleted from the list....`)
+    this.logger.log(`${id} id workshop deleted from the list....`)
     };
   }
