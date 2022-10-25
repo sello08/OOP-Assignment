@@ -17,6 +17,8 @@ export class workShopService {
 
   add(newWorkShop) {
        
+
+    // check array has any workshop or not if it has any value then check its ID so workshops ID has uniqueness
     if(!this.workShops.length){
         this.workShops.push(newWorkShop);
         this.logger.log("A new WorkShop added.", newWorkShop);

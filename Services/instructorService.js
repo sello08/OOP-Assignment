@@ -17,7 +17,28 @@ export class instructorService {
 
   add(newInstructor) {
 
-    this.instructors.push(instructor);
-    this.logger.log("A new instructor added.", instructor); //x , this.loggerType
+
+    if(!this.instructors.length){
+        
+      this.instructors.push(newInstructor);
+      this.logger.log("A new user added.", newInstructor);
+
+    }else{
+
+    this.instructors.forEach(element => {
+      if(element.instructorId == newInstructor.instructorId){
+        this.logger.log("It seems this ID already in use...")
+      }else{
+        this.users.push(newInstructor);
+        this.logger.log("A new user added..", newInstructor);
+      }
+    });
   }
+  }
+  
+  ddeleteById(id){
+    this.instructors =  this.instructors.filter((instructor) => { instructor.instructorId !== id })
+
+    this.logger.log(`${id} id instructor deleted from the list....`)
+    };
 }
