@@ -1,14 +1,15 @@
 export default class workShops{
-    constructor(workShopsTopic, workShopsInstructor, workShopsContent, workShopImage , workShopPrice,   ){
-      this.workShopsTopic = workShopsTopic;
-      this.workShopsInstructor = workShopsInstructor;
-      this.workShopsContent = workShopsContent;
+    constructor(workShopId ,workShopTopic, workShopInstructor, workShopContent, workShopImage , workShopPrice,   ){
+      this.workShopId = workShopId;
+      this.workShopTopic = workShopTopic;
+      this.workShopInstructor = workShopInstructor;
+      this.workShopContent = workShopContent;
       this.workShopImage = workShopImage;
       this.workShopPrice = workShopPrice;
     }
 
     kampTanıt(){
-      console.log(`${this.workShopsTopic} konusunun işleneceği kamp ${this.workShopsInstructor} tarafından yönetilecek olup fiyatı ${this.workShopPrice} olarak belirlenmiştir.  `)
+      console.log(`${this.workShopTopic} konusunun işleneceği kamp ${this.workShopInstructor} tarafından yönetilecek olup fiyatı ${this.workShopPrice} olarak belirlenmiştir.  `)
     }
   }
 

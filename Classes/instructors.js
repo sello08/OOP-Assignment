@@ -1,9 +1,5 @@
 export default class instructors{
-    constructor(instructorId,
-                instructorFirstName,
-                instructorSecondName,
-                instructorImage  )
-
+    constructor( instructorId, instructorFirstName, instructorSecondName, instructorImage  )
     {
       this.instructorId = instructorId;
       this.instructorFirstName = instructorFirstName;
