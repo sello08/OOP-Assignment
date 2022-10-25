@@ -1,5 +1,5 @@
 export default class workShops{
-    constructor(workShopId ,workShopTopic, workShopInstructor, workShopContent, workShopImage , workShopPrice,   ){
+    constructor(workShopId ,workShopTopic, workShopInstructor, workShopContent, workShopImage , workShopPrice ){
       this.workShopId = workShopId;
       this.workShopTopic = workShopTopic;
       this.workShopInstructor = workShopInstructor;
@@ -14,4 +14,4 @@ export default class workShops{
   }
 
 
-  const java = new workShops("Java" , "Selim Akyol", "Java giriş ve temel özellikler", "resim", "Ücretsiz");
+  const java = new workShops("1" ,"Java" , "Selim Akyol", "Java giriş ve temel özellikler", "resim", "Ücretsiz");

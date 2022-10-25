@@ -11,9 +11,9 @@ import { SmsLogger, FileLogger, EmailLogger, BaseLogger } from "./Loggers.js";
 
 const logger1 = new SmsLogger();
 const workShopService1 = new workShopService(logger1);
-const workShop1 = new workShops("Java" , "Selim Akyol", "Java giriş ve temel özellikler", "resim", "Ücretsiz")
+const workShop1 = new workShops(1, "Java" , "Selim Akyol", "Java giriş ve temel özellikler", "resim", "Ücretsiz")
 
 workShopService1.add(workShop1);
 
-console.log("kdsfbhjsdbfkjdsfbnhkds");
+
 

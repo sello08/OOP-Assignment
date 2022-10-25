@@ -17,15 +17,10 @@ export class workShopService {
 
   add(newWorkShop) {
 
-    this.workShops.forEach(workShop => {
-
-      if(workShop.workShopId = newWorkShop.workShopId){
-        this.logger.log("It seems this WorkShop already exist")
-      }else{
+    
         this.workShops.push(newWorkShop);
         this.logger.log("A new WorkShop added.", newWorkShop); //x , this.loggerType
-      }
-    });
+    
   }
 
   deleteById(id){
