@@ -1,5 +1,5 @@
-import workShops from "./Classes/workShops";
-import { workShopService } from "./Services/workShopService";
+import workShops from "./Classes/workShops"
+import { workShopService } from "../Services/workShopService";
 import { SmsLogger, FileLogger, EmailLogger, BaseLogger } from "./Loggers";
 
 
@@ -14,4 +14,6 @@ const workShopService1 = new workShopService(logger1);
 const workShop1 = new workShops("Java" , "Selim Akyol", "Java giriş ve temel özellikler", "resim", "Ücretsiz")
 
 workShopService1.add(workShop1);
+
+console.log("kdsfbhjsdbfkjdsfbnhkds");
 
